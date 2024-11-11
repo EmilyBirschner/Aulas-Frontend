@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--3- Internal CSS-->
+    <style>
+        p {
+
+            font-size: 40px;
+        }
+    </style>
+    <!--4- External CSS-->
+    <!--Cascading Style Sheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lists.css">
+</head>
+
+<body>
+    <!-- 1- Inline CSS-->
+    <h1 style="color:blue">Mudar a cor com Inline</h1>
+    <h1 style="color: green">Outro Título</h1>
+
+    <!--2- Múltiplas regras-->
+    <h1 style="color:blueviolet; font-size:50px; border-bottom:1px solid grey">Mudar cor e tamanho da fonte</h1>
+
+    <!--3- Internal CSS-->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod cupiditate laboriosam, ipsa veritatis
+        at suscipit, eveniet aut nihil cumque pariatur quasi delectus aspernatur, eius quidem unde. Modi, saepe sed.</p>
+
+    <!--4- External CSS-->
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, placeat qui modi, perferendis dignissimos
+        dolores ad eaque nostrum voluptatibus ratione veniam assumenda consequuntur rerum distinctio, voluptas alias
+        aliquid! Nihil, numquam!</h3>
+
+    <!--5- Ordem do CSS-->
+    <p style="color: brown;">Ordem CSS</p>
+
+    <!--6- Multiplo CSS-->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Abacate</li>
+    </ul>
+
+    <!--7- Classes-->
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aut, aperiam maxime nihil
+        officiis, beatae alias voluptate repellendus natus accusamus repudiandae earum hic nisi! Assumenda saepe
+        deserunt quis possimus id!</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aut, aperiam maxime nihil
+        officiis, beatae alias voluptate repellendus natus accusamus repudiandae earum hic nisi! Assumenda saepe
+        deserunt quis possimus id!</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aut, aperiam maxime nihil
+        officiis, beatae alias voluptate repellendus natus accusamus repudiandae earum hic nisi! Assumenda saepe
+        deserunt quis possimus id!</p>
+
+    <!--8- id-->
+    <h1 id="exclusive-title">Título com id</h1>
+
+    <!-- 10 - Multiplas regras/ordem do css -->
+    <h2 id="algum-titulo" class="titulo">Algum texto 1</h2>
+    <h2 class="titulo">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+
+    <!-- 11 - bg image -->
+    <h1 class="bg-image">Este título tem uma imagem!</h1>
+
+    <!-- 12 - Centralizando a imagem background -->
+    <div class="not-centered-bg"></div>
+    <div class="centered-bg"></div>
+
+    <!-- 13 - Largura e altura -->
+    <div class="height-width"></div>
+    <div class="height-width-2"></div>
+
+    <!-- 14- Padding -->
+    <div class="without-padding">Este não tem padding</div>
+    <div class="padding">Este tem padding</div>
+
+    <!-- 15 - Padding individual -->
+    <p class="padding-individual">Aqui tem padding diferentes</p>
+
+    <!-- 16 - Padding com width -->
+    <div class="without-border-box">
+        <p>Algum conteúdo</p>
+    </div>
+    <div class="border-box">
+        <p>Algum conteúdo 2</p>
+    </div>
+
+    <!-- 17 - Border -->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+
+    <!-- 18 -borda individual -->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda inferior</p>
+
+</body>
+
+</html>
