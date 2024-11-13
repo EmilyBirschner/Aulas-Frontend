@@ -1,5 +1,4 @@
 /*4 - External*/
-
 body {
     padding-bottom: 500px;
 }
@@ -45,7 +44,6 @@ h2 {
 }
 
 /* centralizando bg image */
-
 .not-centered-bg,
 .centered-bg {
     height: 400px;
@@ -59,7 +57,6 @@ h2 {
 }
 
 /* Largura e altura */
-
 .height-width {
     height: 200px;
     width: 100px;
@@ -91,7 +88,6 @@ h2 {
 }
 
 /* Padding com width */
-
 .without-border-box {
     background-color: #444;
     color: #fff;
@@ -100,7 +96,6 @@ h2 {
 }
 
 /* border box */
-
 .border-box {
     background-color: #666;
     color: #fff;
@@ -110,7 +105,6 @@ h2 {
 }
 
 /* border */
-
 .border {
     border: 5px solid red;
     padding: 10px;
@@ -122,7 +116,6 @@ h2 {
 }
 
 /* borda individual */
-
 .border-left {
     border-left: 10px solid slateblue;
     background-color: #767373;
@@ -136,7 +129,6 @@ h2 {
 }
 
 /* box-model */
-
 .box-model {
     margin: 20px;
     padding: 15px 25px;
@@ -144,4 +136,116 @@ h2 {
     border-radius: 7px;
     width: 300px;
     height: 400px;
+}
+
+/* align */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid darkblue;
+}
+
+/* text decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: #f9365f;
+}
+
+/* text transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 3px;
+}
+
+/* fontes */
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* text style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* font weight */
+.thin,
+.bold,
+.bolder {
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* font size */
+.small {
+    font-size: 7px;
+}
+
+.big {
+    font-size: 70px;
+}
+
+/* Display */
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #656565;
+    display: block;
+    margin: 10px;
 }
