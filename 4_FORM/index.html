@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Formulários HTML</h2>
+    <!-- 1 - Primeiro Formulário -->
+    <!-- 2 - Atributos do Formulário -->
+    <form action="register.php" method="GET">
+        <div>
+            <label class="bold">Nome:</label>
+            <input type="text" />
+        </div>
+        <!-- 3 - Atributo name -->
+        <div>
+            <!-- 4 - Atributo label -->
+            <label for="age" class="bold">Idade</label>
+            <input type="text" name="age" />
+        </div>
+        <!-- 6 - Select -->
+        <div>
+            <label for="job" class="bold">Selecione a sua profissão</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+
+        <!-- 7 - Atributo Selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+
+        <!-- 8 - Multiplas Seleções -->
+        <div>
+            <label for="items">Selecione os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="pera">Pêra</option>
+                <option value="arroz">Arroz</option>
+                <option value="feijao">Feijão</option>
+                <option value="milho">Milho</option>
+                <option value="maca">Maçã</option>
+            </select>
+        </div>
+
+        <!-- 9 - TextArea -->
+        <div>
+            <label for="comment">Comentário:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- 10 - Fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>Preencha com suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <!-- 11 - Datalist -->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+        <!-- 12 - Input Senhas -->
+        <div>
+            <label for="password">Digite a senha:</label>
+            <input type="password" name="password">
+        </div>
+        <!-- 14 - Input radio -->
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="volks" name="car_model">
+                <label for="volks">Volks</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="byd" name="car_model">
+                <label for="byd">BYD</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="volvo" name="car_model">
+                <label for="volvo">Volvo</label>
+
+            </div>
+        </div>
+
+        <!-- 15 - Input checkbox -->
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Pneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo_engine">
+                <label for="turbo_engine">Motor Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+            </div>
+        </div>
+
+        <!-- 16 - Input de data -->
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <!-- 17 - Input para arquivos -->
+        <div>
+            <label for="document">Envie seu documento aqui:</label>
+            <input type="file" name="document">
+        </div>
+
+        <!-- 18 - Input para números -->
+        <div>
+            <label for="number">Digite o valor aqui:</label>
+            <input type="number" name="number">
+        </div>
+
+        <!-- 19 - Input para emails -->
+        <div>
+            <label for="email">Digite seu email:</label>
+            <input type="email" name="email">
+        </div>
+
+        <!-- 20 - Atributo Value -->
+        <div>
+            <label for="value">Digite algum valor:</label>
+            <input type="text" value="O valor" name="value">
+        </div>
+
+        <!-- 21 - Atributo disable -->
+        <div>
+            <p>Tente mudar o valor:</p>
+            <input type="text" value="Qualquer coisa" disabled>
+        </div>
+
+        <!-- 22 - Atributo placeholder -->
+        <div>
+            <label for="name_1">Digite seu nome:</label>
+            <input type="text" name="name_1" placeholder="Ex.: Fulano">
+        </div>
+
+        <!-- 23 - Atributo required -->
+        <div>
+            <label for="email_1">Digite seu email:</label>
+            <input type="email" name="email_1" placeholder="email@email.com" required>
+        </div>
+
+
+
+        <span>
+            <!-- 13 - Reiniciando o form -->
+            <input type="reset" value="Limpar">
+            <!-- 5 - Envio do Formulário -->
+            <input type="submit" value="Enviar" />
+        </span>
+
+    </form>
+
+</body>
+
+</html>
